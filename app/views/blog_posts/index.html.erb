@@ -1,0 +1,12 @@
+<header> 
+  <h1> Trinta Linhas! 😎</h1>
+</header>
+<main> 
+  <% @blog_posts.each do |blog_post| %>
+    <article>
+      <h2><%= blog_post.title%></h2>
+      <p><%= blog_post.body%></p>
+    </article>
+  <% end %>
+</main>
+<footer>@TrintaLinhas</footer>
